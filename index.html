@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./image/AL-favicon.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Anteo Leonardi Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="./image/AL_branco-04.png" alt="Anteo Leonardi logo" />
+      </picture>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="#offering">Showcase</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" ">
+        <aside>
+          <strong
+            ><h1 data-aos="fade-down">
+              Welcome to <br />
+              my Website
+            </h1></strong
+          >
+          <p data-aos="fade-right">
+            Hi, my name is Anteo and I'm a <br> <span class="auto-typed"></span>
+          </p>
+        </aside>
+        <picture>
+          <img src="./image/SwidthAnteo.jpeg" alt="Anteo-img" data-aos="zoom-in"/>
+        </picture>
+      </section>
+      <section class="offering" id="offering" ">
+        <h2 data-aos="zoom-in">My Works</h2>
+        <div>
+          <figure data-aos="flip-up">
+            <picture >
+              <img src="./image/todolist.new123.png" alt="todolist img"  />
+            </picture>
+            <figcaption>
+              <p>
+                <h3>To do list</h3>
+                <a href="https://github.com/anteo123/AwesomeTodoList" target="_blank">Code</a>
+                <a href="https://anteo123.github.io/AwesomeTodoList/" target="_blank">Preview</a>
+              </p>
+            </figcaption>
+          </figure>
+          <figure data-aos="flip-up">
+            <picture>
+              <img src="./image/Weather App.new.jpeg" alt="Weather app img" />
+            </picture>
+            <figcaption>
+              <p>
+                <h3>Weather App</h3>
+                <a href="https://github.com/anteo123/Weather-App" target="_blank">Code</a>
+                <a href="https://anteo123.github.io/Weather-App/" target="_blank">Preview</a>
+              </p>
+            </figcaption>
+          </figure>
+          <figure data-aos="flip-down">
+            <picture>
+              <img src="./image/calcJS.png" alt="calculator JS IMG" />
+            </picture>
+            <figcaption>
+              <p>
+                <h3>Calculator</h3>
+                <a href="https://github.com/anteo123/CalcJSMain" target="_blank">Code</a>
+                <a href="https://anteo123.github.io/CalcJSMain/" target="_blank">Preview</a>
+              </p>
+            </figcaption>
+          </figure>
+          <figure data-aos="flip-down">
+            <picture>
+              <img src="./image/rockpapscis.png" alt="rock paper scissors  img" />
+            </picture>
+            <figcaption>
+              <p>
+                <h3>Rock Paper Scissors</h3>
+                <a href="https://github.com/anteo123/RockpaperscissorsDOM" target="_blank">Code</a>
+                <a href="https://anteo123.github.io/RockpaperscissorsDOM/" target="_blank">Preview</a>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="mySkills" data-aos="zoom-in">
+        <div class="skills">
+          <h3>My skills</h3>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90%" style="max-width: 90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70%" style="max-width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="60%" style="max-width: 60%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">SASS</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70%" style="max-width: 70%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="cta" data-aos="zoom-out">
+        <div>
+          <h3>Do you want to see more of my projects?</h3>
+          <p>Check them on my GitHub!</p>
+        </div>
+          <a href="https://github.com/anteo123?tab=repositories" target="_blank">GitHub</a>
+          <a href="Anteo_CV_062023.pdf" download="">CV</a>
+      </section>
+    </main>
+    <footer id="Contact" data-aos="zoom-in">
+      <a href="https://github.com/anteo123" target="_blank">Linkedin</a>
+      <a href="mailto:anteoleonardi@gmail.com">Contact</a>
+      <a href="https://github.com/anteo123" target="_blank">GitHub</a>  
+      <p>&copy 2023 Anteo Leonardi</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: -1px;
+}
+
+/* Style the logo */
+header img {
+  width: 30px;
+}
+
+header img:hover {
+  opacity: 0.5;
+  transition: 200ms;
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+header a:hover {
+  color: lightskyblue;
+  transition: 300ms;
+}
+
+aside {
+  padding-right: 2%;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 10px 0px 10px 0px;
+}
+
+.hero picture img {
+  width: 200px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  transition: 500ms ease-in-out;
+}
+.hero picture img:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.auto-typed {
+  color: aquamarine;
+  text-shadow: 0px 0px 15px #3882f6;
+}
+
+.hero {
+  background-color: #1f2937;
+  padding-top: 100px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1f2937;
+  padding-top: 3%;
+}
+
+.offering {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.offering div {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+figure h3 {
+  padding-bottom: 5px;
+}
+figure {
+  margin: 10px;
+  width: 220px;
+  height: 180px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 3px 12px rgba(121, 120, 120, 0.25);
+  color: #1f2937;
+  transition: 300ms;
+  text-align: center;
+  font-size: 16px;
+}
+figure a {
+  text-decoration: none;
+  color: #3882f6;
+  padding: 5px;
+}
+
+figure:hover {
+  transform: scale(1.13);
+}
+
+figure img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  padding-bottom: 5px;
+}
+
+.mySkills {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-bottom: 25px;
+}
+
+.skills {
+  width: 50%;
+  padding: 20px 20px;
+  margin: auto;
+}
+.skills h3 {
+  padding-bottom: 25px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 14px;
+  background: rgb(52, 165, 129);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 0px 5px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.cta {
+  display: flex;
+  background-color: #3882f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  width: 50%;
+  border-radius: 5px;
+  margin: 50px auto;
+  color: #e5e7eb;
+}
+
+.cta a {
+  color: #e5e5e5;
+  background-color: #3882f6;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 18px;
+  margin-left: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta a:hover {
+  background-color: #e5e7eb;
+  color: #3882f6;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer {
+  text-align: center;
+  background-color: #1f2937;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e5e7eb;
+  border: 1px solid whitesmoke;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  transition: 0.5s;
+}
+
+footer p {
+  color: #e5e7eb;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  header a {
+    color: #e5e7eb;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+    color: #f9faf8;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero p {
+    font-size: 20px;
+    color: #e5e7eb;
+    padding: 10px 0px 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #e5e7eb;
+    background-color: #3882f6;
+    font-weight: 700;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offering div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  blockquote span {
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    padding: 20px 5px 20px 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta h3 {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cta p {
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cta a {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Contact a {
+    font-size: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cta {
+    display: flex;
+    background-color: #3882f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    width: 90%;
+    border-radius: 5px;
+    margin: 50px auto;
+    color: #e5e7eb;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 0px 5px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 16px;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
